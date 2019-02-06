@@ -9,6 +9,14 @@
        width: 50%;
        flex-direction: column;
        margin: 20px auto;
+       border-color: black;
+       border-width: 5px;
+       border-style: solid;
+       padding-bottom: 10px;
+       border-radius:10px;
+       
+
+
    }
    .form-group{
        display: flex;
@@ -16,6 +24,10 @@
        margin: 5px 0px;
        align-items: center;
    }
+   .form-control{
+
+   }
+
 
    input[type="submit"]{
        background-color: #333333;

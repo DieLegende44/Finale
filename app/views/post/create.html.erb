@@ -1,8 +1,9 @@
 <!-- app/views/post/create.html.erb -->
-
+<body>
+  <main>
     <div class="title">
-        <h1>legendärer Blog</h1>
-        <p>Bearbeitungsmodus</p>
+        <h1>Fotostory-Blog</h1>
+        
     </div>
     <nav>
 
@@ -13,28 +14,31 @@
     <div style="text-align:center">
         <p><strong>Um einen Beitrag zu erstellen, füllen sie bitte das folgende Formular aus</strong></p>
 
-        <form method="POST" action="/post/store" enctype="multipart/form-data" class="post-form">
-            <%= token_tag %>
+          <form method="POST" action="/post/store" enctype="multipart/form-data" class="post-form">
+              <%= token_tag %>
 
-            <div class="form-group">
-                <label for="title">Titel</label>
-                <input type="text" name="title" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="media">Medium hinzufügen</label>
-                <input type="file" name="media" class="form-control media-upload">
-            </div>
-            <div class="form-group">
-                <label for="author">Author</label>
-                <input type="text" name="author" class="form-control" />
-            </div>
-            <div class="form-group">
-                <label for="body">Inhalt</label>
-                <textarea name="body" class="form-control" cols="30" rows="10"></textarea>
-            </div>
-            <div class="from-group">
-                <div><input type="submit" value="Beitrag erstellen"></div>
-            </div>
-        </form>
+              <div class="form-group">
+                  <label for="title">Titel</label>
+                  <input type="text" name="title" class="form-control">
+              </div>
+              <div class="form-group">
+                  <label for="media">Medium hinzufügen</label>
+                  <input type="file" name="media" class="form-control media-upload">
+              </div>
+              <div class="form-group">
+                  <label for="author">Author</label>
+                  <input type="text" name="author" class="form-control" />
+              </div>
+              <div class="form-group">
+                  <label for="body">Inhalt</label>
+                  <textarea name="body" class="form-control" cols="60" rows="10"></textarea>
+              </div>
+              <div class="from-group">
+                  <div><input type="submit" value="Beitrag erstellen"></div>
+              </div>
+          </form>
+
 
     </div>
+  </main>
+  </body>
