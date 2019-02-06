@@ -14,6 +14,8 @@ gem 'sqlite3', '~> 1.3.6'
 gem 'puma', '~> 3.7'
 # adding cloudinary to gemfile
 gem 'cloudinary'
+# adding Pusher to Gemfile
+gem 'pusher'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

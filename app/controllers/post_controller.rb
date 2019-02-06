@@ -1,5 +1,4 @@
 # app/controllers/post_controller.rb
-
     class PostController < ApplicationController
       def create
       end
@@ -9,9 +8,17 @@
         @image = Cloudinary::Uploader.upload(params[:media])
         # create a new post object and save to db
         @post = Post.new({:title => params[:title], :body => params[:body], :author => params[:author],  :media => @image['secure_url']})
-        @post.save
-        # trigger an event with pusher
-       #[...]
+
+        if @post.save
+          # broadcasting posts using pusher
+          Pusher.trigger('posts-channel','new-post', {
+            id: @post.id,
+            title: @post.title,
+            media: @post.media,
+            body: @post.body
+          })
+        end
+
         redirect_to('/')
       end
     end
