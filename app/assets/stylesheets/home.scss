@@ -5,12 +5,45 @@
 // app/assets/stylesheets/home.scss
 
     * {
-      font-family: "Lora", serif;
+      font-family: sans-serif;
+    }
+.Übertitel{padding-top: 10px;
+  }
+    nav{
+        background: #f3f3f3;
+        padding: 10px;
+        font-size: 20px;
+      }
+      a {
+	       text-decoration: none;
+         padding-right: 15px;
+         color: #444;
     }
 
-    .title {
-      text-align: center;
-    }
+    a:hover {
+	text-decoration: underline;
+}
+body{background: #eee;
+  }
+
+    main{
+      padding-left: 5px;
+
+	margin: 2em auto;
+	max-width: 960px;
+	background: white;
+
+	box-shadow: 0 6px 10px gray, 0 6px 15px gray;
+	border-radius: 2px;
+
+}
+
+
+
+.hintergrund-titel{ background-color:#81DAF5;
+}
+
+
 
     .posts {
       margin-top: 50px;
@@ -30,6 +63,9 @@
       border: 1px solid rgb(68, 68, 68);
       border-radius: 5px;
       margin: 20px 0px;
+      background-color:#A9E2F3;
+      text-align: center;
+      font-size:11px;
     }
 
     .image {
@@ -40,4 +76,5 @@
     .body-trunc {
       margin-left: 10px;
       margin-right: 10px;
+      font-size:15px;
     }

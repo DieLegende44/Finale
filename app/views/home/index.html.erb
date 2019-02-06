@@ -5,20 +5,29 @@
           encrypted: true
         });
     </script>
+<body>
+  <main>
+    <div class="wrapper">
+    <div class="wrapper">
+        <div class="htitle">
+            <h1>Fotostory-Blog </h1>
 
-    <div class="wrapper">
-    <div class="wrapper">
-        <div class="title">
-            <h1>Der legendäre Blog </h1>
-            <p>Die aktuellen Beiträge</p>
         </div>
+        <nav>
+
+          <a href="post/create">Upload</a>
+          <a href="">Gallerie</a>
+
+        </nav>
+<p class="Übertitel">  Die neuesten Fotostories</p>
+
 
      <div class="posts" id="post_section">
             <% @posts.each do |post| %>
 
                 <div class="post-card">
                     <img class="image" src="<%= post.media %>">
-                    <div class="title">
+                    <div class="hintergrund-titel" class="title">
                         <h2><%= post.title %></h2>
                     </div>
                     <div class="body-trunc">
@@ -28,6 +37,8 @@
             <% end %>
         </div>
     </div>
+</main>
+</body>
     <script>
             var channel = pusher.subscribe('posts-channel');
             channel.bind('new-post', function(data) {
@@ -50,4 +61,4 @@
                     </div>`;
                 div.insertBefore(new_content, div.firstChild);
             });
-        </script> 
+        </script>
