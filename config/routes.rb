@@ -1,8 +1,8 @@
 # config/routes.rb
 
-  Rails.application.routes.draw do
-    get 'post/create'
-    post 'post/store'
+Rails.application.routes.draw do
+  get 'post/create'
+  post 'post/store'
 
-    root 'home#index'
-  end
+  root 'home#index'
+end

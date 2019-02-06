@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: divmfsuta
+  api_key: '315764777288615'
+  api_secret: io2zw_w2JcFOkepudpKAIqhvxfM
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: divmfsuta
+  api_key: '315764777288615'
+  api_secret: io2zw_w2JcFOkepudpKAIqhvxfM
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: divmfsuta
+  api_key: '315764777288615'
+  api_secret: io2zw_w2JcFOkepudpKAIqhvxfM
+  enhance_image_tag: true
+  static_file_support: false
